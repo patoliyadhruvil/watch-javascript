@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Timer</title>
+
+        <style>
+            body{
+                background-color: rgb(38, 0, 255);
+            }
+            .main-box {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               min-height: 100vh;
+            }
+            .timer{
+                text-align: center;
+                color: #fff;
+            }
+            h2{
+                margin-bottom: 25px;
+            }
+            .btn{
+                text-align: center;
+            }
+            .box{
+                border-radius: 10px;
+                border: rgb(0, 0, 0);
+                background-color: black;
+                height: 150px;
+                padding: 15px;
+            }
+            .btn1 , .btn2 , .btn3{
+                padding: 15px 30px;
+                border-radius: 20px;
+                background-color: #f4f4f4;
+                color: #000000;
+                font-size: 18px;
+                display: inline-block;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="main-box">
+            <div class="box">
+                <div class="timer">
+                    <h2>0:00:00</h2>
+                </div>
+                <div class="btn">
+                    <button onclick="return Start()" class="btn1">Start</button>
+                    <button onclick="return Stop()" class="btn2">Stop</button>
+                    <button onclick="return Restart()" class="btn3">Resate</button>
+                </div>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+
+    </body>
+</html>
